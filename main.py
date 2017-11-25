@@ -5,10 +5,26 @@ import re
 import time
 urllib3.disable_warnings()
 
+def get_phone_number():
+    global phone_number
+    phone_number = raw_input("Enter phone number : ")
+
+    if phone_number == "1" :
+        phone_number = "0524098844"
+    elif len(phone_number) != 10:
+        print "Invalid phone number, try again. "
+        get_phone_number()
+    else:
+        pass
+
+    return str(phone_number)
+
+
 def get_call_number():
+    global phone_number
 
 # get the page and parse it
-    r = requests.get("https://62.0.34.68/benefitmobile/cust/one1/frmwo.aspx?tel=0524098844", verify=False)
+    r = requests.get("https://62.0.34.68/benefitmobile/cust/one1/frmwo.aspx?tel={}".format(phone_number), verify=False)
     data = r.text
     soup = BeautifulSoup(data, "html.parser")
 
@@ -19,8 +35,6 @@ def get_call_number():
     number = soup.findAll("span", {"id" : "lblTitle"}, text=True)[0].text
     number = re.sub("\D", "", number)
     return number
-get_call_number()
-number = int(get_call_number())
 # copied from stackoverflow
 def send_email(user, pwd, recipient, subject, body):
     import smtplib
@@ -50,6 +64,7 @@ msg = "nothing"
 def call_checker():
     send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com",subject="One1 Call Notification System", body="Notification system started")
     while True :
+        #calls number
         global number
         print number
         updated_calls = get_call_number()
@@ -74,6 +89,10 @@ def call_checker():
         print msg
         time.sleep(60)
 
+
+phone_number = get_phone_number()
+get_call_number()
+number = int(get_call_number())
 call_checker()
 
 #send_email(user = "chn566",pwd= "itwmedbwphqaklsc",recipient= "chn566work@gmail.com",subject= "One1 Call Notification System",body= "Current number of calls is {}".format(number))
