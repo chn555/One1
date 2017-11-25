@@ -13,7 +13,7 @@ def get_phone_number():
     if phone_number == "1" :
         phone_number = "0524098844"
     elif len(phone_number) != 10:
-        print "Invalid phone number, try again. "
+        print ("Invalid phone number, try again.")
         get_phone_number()
     else:
         pass
@@ -40,9 +40,9 @@ def get_call_number():
         number = re.sub("\D", "", number)
 
     except IndexError:
-        print "Something went wrong, probably wrong phone number."
+        print ("Something went wrong, probably wrong phone number.")
     except ConnectionError:
-        print "System is offline, retrying in 5min"
+        print ("System is offline, retrying in 5min")
         time.sleep(300)
         get_call_number()
 
@@ -68,9 +68,9 @@ def send_email(user, pwd, recipient, subject, body):
         server.login(gmail_user, gmail_pwd)
         server.sendmail(FROM, TO, message)
         server.close()
-        print 'successfully sent the mail'
+        print ('successfully sent the mail')
     except:
-        print "failed to send mail"
+        print ("failed to send mail")
 
 msg = "nothing"
 def call_checker():
@@ -79,9 +79,9 @@ def call_checker():
     while True :
         #calls number
         global number
-        print number
+        print (number)
         updated_calls = get_call_number()
-        print updated_calls
+        print (updated_calls)
         global msg
         if updated_calls == number:
             pass
@@ -99,7 +99,7 @@ def call_checker():
             send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient=Email,
                        subject="One1 Call Notification System", body= msg)
             number = updated_calls
-        print msg
+        print (msg)
         time.sleep(60)
 
 
@@ -110,5 +110,5 @@ number = int(get_call_number())
 call_checker()
 
 #send_email(user = "chn566",pwd= "itwmedbwphqaklsc",recipient= "chn566work@gmail.com",subject= "One1 Call Notification System",body= "Current number of calls is {}".format(number))
-print number
+print (number)
 
