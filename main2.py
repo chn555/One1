@@ -78,19 +78,36 @@ def compare_calls () :
        pass
     elif current_call_number > old_call_number:
         diff = int(current_call_number) - int(old_call_number)
-        msg = "{} call(s) added, {} calls total."\
-              "Timestamp: {:%Y-%m-%d %H:%M:%S}".format(diff, current_call_number, datetime.datetime.now())
-
+        msg = "{} call(s) added, {} calls total.\n"\
+              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
         send_SMS(global_phone_number, msg)
+        print msg
+
+    elif old_call_number > current_call_number:
+        diff = int(old_call_number) - int(current_call_number)
+        msg = "{} call(s) removed, {} calls total.\n" \
+              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
+        send_SMS(global_phone_number, msg)
+        print msg
+
+def compare_calls_email () :
+
+    global msg
+    msg = "test msg"
+    if current_call_number == old_call_number:
+       pass
+    elif current_call_number > old_call_number:
+        diff = int(current_call_number) - int(old_call_number)
+        msg = "{} call(s) added, {} calls total.\n"\
+              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
         send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com",
                subject="One1 Call Notification System", body=msg)
         print msg
 
     elif old_call_number > current_call_number:
         diff = int(old_call_number) - int(current_call_number)
-        msg = "{} call(s) removed, {} calls total." \
-              "Timestamp: {:%Y-%m-%d %H:%M:%S}".format(diff, current_call_number, datetime.datetime.now())
-        send_SMS(global_phone_number, msg)
+        msg = "{} call(s) removed, {} calls total.\n" \
+              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
         send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com",
                    subject="One1 Call Notification System", body=msg)
         print msg

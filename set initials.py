@@ -5,7 +5,8 @@ import re
 import time
 from requests.exceptions import ConnectionError
 urllib3.disable_warnings()
-
+import nexmo
+client = nexmo.Client(key="2c70516f", secret="0a7a75d30074b55f")
 
 def send_email(user, pwd, recipient, subject, body):
     import smtplib
@@ -64,3 +65,9 @@ call.write(get_call_number())
 
 send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com", subject="One1 Call Notification System",
            body="Notification system started")
+
+client.send_message({
+    'from': 'One1',
+    'to': "972"+str(phone_number),
+    'text': "Notification system started",
+})
