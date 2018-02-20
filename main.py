@@ -17,7 +17,7 @@ import datetime
 from requests.exceptions import ConnectionError
 urllib3.disable_warnings()
 import nexmo
-client = nexmo.Client(key="2c70516f", secret="0a7a75d30074b55f")
+client = nexmo.Client(key="KEY", secret="SECRET")
 
 file = open("pnum.txt","r")
 text = open("callnum.txt","r")
@@ -110,7 +110,7 @@ def compare_calls_email () :
         diff = int(current_call_number) - int(old_call_number)
         msg = "{} call(s) added, {} calls total.\n"\
               "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com",
+        send_email(user="USR", pwd="PWD", recipient="chn566work@gmail.com",
                subject="One1 Call Notification System", body=msg)
         print msg
 
@@ -118,7 +118,7 @@ def compare_calls_email () :
         diff = int(old_call_number) - int(current_call_number)
         msg = "{} call(s) removed, {} calls total.\n" \
               "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com",
+        send_email(user="USR", pwd="PWD", recipient="chn566work@gmail.com",
                    subject="One1 Call Notification System", body=msg)
         print msg
 
