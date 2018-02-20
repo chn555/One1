@@ -12,6 +12,10 @@ tested on centos7 and ubuntu 16.04
 ## TODO
 add option for email notification
 
+## License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE.txt](LICENSE.txt) file for details
+
 ## Authors
 * **chn555** -(https://github.com/chn555)
 
