@@ -3,6 +3,8 @@
 this script is used to notify field techs of a change in call number.
 it checks the techs page every minute and reports change
 
+# Script is currently broken while I make fixes to code
+
 
 ### requirements
 this scripts requires python 2.7 
