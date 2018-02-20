@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python2
 phone_number = raw_input("Enter phone number : ")
 
 
