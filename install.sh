@@ -37,13 +37,13 @@ Initialize(){
   cp main.py ~/.$name/
 
 
-  cd ~/.$name 
+  cd ~/.$name
 	chmod +x phone_number.py
 	chmod +x set_initials.py
 
 	./phone_number.py
   ./set_initials.py && echo "phone number verified"
-  echo  "* * * * * /usr/bin/env python2.7 $(pwd)/$name/main.py" > mycron
+  echo  "* * * * * /usr/bin/env python2.7 $(pwd)/main.py" > mycron
   crontab mycron
   rm mycron
   echo 0 > callnum.txt
