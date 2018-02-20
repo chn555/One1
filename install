@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+#installs the One1 script and adds it to cron
+#written by chn555
+
+chmod +x 
