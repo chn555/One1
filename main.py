@@ -1,4 +1,10 @@
 #!/usr/bin/env python2
+#
+# runs the python script for One1 project
+# written by chn555
+# licensed by GPL-3.0
+# version 1.0
+
 import sys
 reload (sys)
 sys.setdefaultencoding('utf8')
