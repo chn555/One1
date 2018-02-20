@@ -13,8 +13,8 @@ urllib3.disable_warnings()
 import nexmo
 client = nexmo.Client(key="2c70516f", secret="0a7a75d30074b55f")
 
-file = open("/home/chn555/One1/pnum.txt","r")
-text = open("/home/chn555/One1/callnum.txt","r")
+file = open("pnum.txt","r")
+text = open("callnum.txt","r")
 
 phone_number = int(file.read())
 old_call_number = int(text.read())
@@ -136,7 +136,7 @@ text.close()
 
 
 
-text = open("/home/chn555/One1/callnum.txt","w")
+text = open("callnum.txt","w")
 text.write(str(current_call_number))
 file.close()
 text.close()

@@ -3,5 +3,5 @@ phone_number = raw_input("Enter phone number : ")
 
 
 
-file = open("$HOME/.One1/pnum.txt","w")
+file = open("pnum.txt","w")
 file.write(phone_number)
