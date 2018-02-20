@@ -29,6 +29,7 @@ Pip_req(){
 
 
 Initialize(){
+	mkdir ~/.One1
 	chmod +x phone_number.py
 	chmod +x set_initials.py
 	./phone_number.py
