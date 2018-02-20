@@ -56,12 +56,12 @@ def get_call_number():
 
     return number
 
-file = open("~/.One1/pnum.txt","r")
+file = open("pnum.txt","r")
 phone_number = file.read()
 
 
 
-call = open("~/.One1/callnum.txt","w")
+call = open("callnum.txt","w")
 call.write(get_call_number())
 
 send_email(user="chn566", pwd="itwmedbwphqaklsc", recipient="chn566work@gmail.com", subject="One1 Call Notification System",
