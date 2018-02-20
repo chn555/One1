@@ -9,6 +9,19 @@ this scripts requires python 2.7
 
 tested on centos7 and ubuntu 16.04
 
+## Installation
+
+```
+git clone https://github.com/chn555/One1
+```
+
+to start using the script, simply run install.sh, it will create a hiddent folder called One1 in your home folder.
+a cronjob will also be created to run main.py every minute
+
+## Remove
+uninstallation is currently unsupported
+
+
 ## TODO
 add option for email notification
 
