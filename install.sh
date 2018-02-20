@@ -31,13 +31,13 @@ Pip_req(){
 
 Initialize(){
   read -p "Enter name : " name
-	mkdir $name
-  cp phone_number.py $name/
-  cp set_initials.py $name/
-  cp main.py $name/
+	mkdir ~/.$name
+  cp phone_number.py ~/.$name/
+  cp set_initials.py ~/.$name/
+  cp main.py ~/.$name/
 
 
-  cd $name -r
+  cd ~/.$name 
 	chmod +x phone_number.py
 	chmod +x set_initials.py
 
