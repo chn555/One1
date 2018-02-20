@@ -43,7 +43,12 @@ Initialize(){
 
 	./phone_number.py
   ./set_initials.py && echo "phone number verified"
-  echo  "* * * * * /usr/bin/env python2.7 $(pwd)/main.py" > mycron
+  touch run.sh
+  echo "#!/bin/bash" > run.sh
+  echo "/usr/bin/env python2.7 main.py" >> run.sh
+  chmod +x run.sh
+
+  echo  "* * * * * $(pwd)/run.sh" > mycron
   crontab mycron
   rm mycron
   echo 0 > callnum.txt
