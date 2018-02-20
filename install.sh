@@ -46,6 +46,7 @@ Initialize(){
   echo  "* * * * * /usr/bin/env python2.7 $(pwd)/$name/main.py" > mycron
   crontab mycron
   rm mycron
+  echo 0 > callnum.txt
 
 
 }
