@@ -31,7 +31,7 @@ Pip_req(){
 
 Initialize(){
   read -p "Enter name : " name
-	mkdir ~/.One1/$name
+	mkdir ~/.One1/$name -p
   cp phone_number.py ~/.One1/$name
   cp set_initials.py ~/.One1/$name
   cp main.py ~/.One1/$name
