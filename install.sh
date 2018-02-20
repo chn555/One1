@@ -13,8 +13,8 @@ Verify_Pip(){
 	  sudo apt-get -y install python-pip &> /dev/null ;
     elif [ -n "`command -v yum`" ]; then
 		echo "Installing pip, please wait"
-		sudo yum install epel-release -y
-	  sudo yum -y install python-tools &> /dev/null ;
+		sudo yum install epel-release -y &> /dev/null
+	  sudo yum -y install python-pip &> /dev/null ;
     fi ;
 	else
 		echo "pip installed, moving on"
@@ -23,17 +23,30 @@ Verify_Pip(){
 }
 
 Pip_req(){
-	pip install nexmo
-	pip install requests
+	pip install nexmo &> /dev/null
+	pip install requests &> /dev/null
+  pip install bs4 &> /dev/null
 }
 
 
 Initialize(){
-	mkdir ~/.One1
+  read -p "Enter name : " name
+	mkdir $name
+  cp phone_number.py $name/
+  cp set_initials.py $name/
+  cp main.py $name/
+
+
+  cd $name -r
 	chmod +x phone_number.py
 	chmod +x set_initials.py
+
 	./phone_number.py
   ./set_initials.py && echo "phone number verified"
+  echo  "* * * * * /usr/bin/env python2.7 $(pwd)/$name/main.py" > mycron
+  crontab mycron
+  rm mycron
+
 
 }
 
