@@ -9,11 +9,33 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-KEY = sys.argv[1]
-SECRET = sys.argv[2]
+USR = sys.argv[3]
+PWD = sys.argv[4]
 
-client = nexmo.Client(key=KEY, secret=SECRET)
 
+def send_email(user, pwd, recipient, subject, body):
+    import smtplib
+
+    gmail_user = user
+    gmail_pwd = pwd
+    FROM = user
+    TO = recipient if type(recipient) is list else [recipient]
+    SUBJECT = subject
+    TEXT = body
+
+    # Prepare actual message
+    message = """From: %s\nTo: %s\nSubject: %s\n\n%s
+    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
+    try:
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.ehlo()
+        server.starttls()
+        server.login(gmail_user, gmail_pwd)
+        server.sendmail(FROM, TO, message)
+        server.close()
+        print ('successfully sent the mail')
+    except:
+        print ("failed to send mail")
 
 def get_call_number():
     global phone_number
@@ -41,14 +63,12 @@ def get_call_number():
 file = open("pnum.txt","r")
 phone_number = file.read()
 
+file2 = open("email.txt","r")
+EMAIL = file2.read()
 
 
 call = open("callnum.txt","w")
 call.write(get_call_number())
 
-
-client.send_message({
-    'from': 'One1',
-    'to': "972"+str(phone_number),
-    'text': "Notification system started",
-})
+send_email(user=USR, pwd=PWD, recipient=EMAIL, subject="One1 Call Notification System",
+           body="Notification system started")

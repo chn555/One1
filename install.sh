@@ -29,12 +29,17 @@ Pip_req(){
 }
 
 
-Initialize(){
+InitializeSMS(){
   read -p "Enter name : " name
 	mkdir ~/.One1/$name -p
   cp phone_number.py ~/.One1/$name
   cp set_initials.py ~/.One1/$name
   cp main.py ~/.One1/$name
+
+  read -p "Please enter your nexmo key : " key
+  read -p "Please enter your nexmo secret key : " secret
+  read -p "Please enter your gmail username : " gusr
+  read -p "Please enter your gmail app password : " gpwd
 
 
   cd ~/.One1/$name
@@ -42,14 +47,15 @@ Initialize(){
 	chmod +x set_initials.py
 
 	./phone_number.py
-  ./set_initials.py && echo "phone number verified"
+  ./set_initials.py -$key -$secret && echo "phone number verified"
   touch run.sh
   echo "#!/bin/bash" > run.sh
   echo "cd $(pwd)" > run.sh
-  echo "/usr/bin/env python2.7 main.py" >> run.sh
+  echo "/usr/bin/env python2.7 main.py -$key -$secret -$gusr -$gpwd" >> run.sh
   chmod +x run.sh
 
   echo  "* * * * * bash $(pwd)/run.sh" > mycron
+  crontab -l >> mycron
   crontab mycron
   rm mycron
   echo 0 > callnum.txt
@@ -57,7 +63,58 @@ Initialize(){
 
 }
 
+InitializeEMAIL(){
+  read -p "Enter name : " name
+	mkdir ~/.One1/$name -p
+  cp phone_number.py ~/.One1/$name
+  cp set_initials_email.py ~/.One1/$name
+  cp mainEmail.py ~/.One1/$name
+
+  read -p "Please enter your email address : " email
+  read -p "Please enter your gmail username : " gusr
+  read -p "Please enter your gmail app password : " gpwd
 
 
+  cd ~/.One1/$name
+    echo $email > email.txt
+	chmod +x phone_number.py
+	chmod +x set_initials_email.py
+
+	./phone_number.py
+  ./set_initials_email.py  && echo "phone number verified"
+  touch run.sh
+  echo "#!/bin/bash" > run.sh
+  echo "cd $(pwd)" > run.sh
+  echo "/usr/bin/env python2.7 mainEmail.py -$key -$secret -$gusr -$gpwd" >> run.sh
+  chmod +x run.sh
+
+  echo  "* * * * * bash $(pwd)/run.sh" > mycron
+  crontab -l >> mycron
+  crontab mycron
+  rm mycron
+  echo 0 > callnum.txt
+
+
+}
+
+menu (){
+
+echo "     Select the version you want to use "
+echo " 1. Use the SMS version, this uses nexmo and costs money"
+echo " 2. Use the EMAIL version, this uses gmail and is free "
+
+read choise
+case $choise in
+    1) InitializeSMS
+    ;;
+
+    2) InitialzeEMAIL
+       ;;
+
+    *) echo "Invalid output, please try again"
+        menu
+        ;;
+
+}
 Verify_Pip
-Initialize
+menu

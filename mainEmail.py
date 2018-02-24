@@ -19,14 +19,15 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-KEY = sys.argv[1]
-SECRET = sys.argv[2]
-USR = sys.argv[3]
-PWD = sys.argv[4]
-client = nexmo.Client(key=KEY, secret=SECRET)
+
+USR = "chn566"
+PWD = "itwmedbwphqaklsc"
+
 
 file = open("pnum.txt","r")
 text = open("callnum.txt","r")
+file2 = open("email.txt","r")
+EMAIL = file2.read()
 
 phone_number = int(file.read())
 old_call_number = int(text.read())
@@ -86,26 +87,6 @@ def get_call_number():
 
     return number
 
-def compare_calls () :
-
-    global msg
-    msg = "test msg"
-    if current_call_number == old_call_number:
-       pass
-    elif current_call_number > old_call_number:
-        diff = int(current_call_number) - int(old_call_number)
-        msg = "{} call(s) added, {} calls total.\n"\
-              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_SMS(global_phone_number, msg)
-        print msg
-
-    elif old_call_number > current_call_number:
-        diff = int(old_call_number) - int(current_call_number)
-        msg = "{} call(s) removed, {} calls total.\n" \
-              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_SMS(global_phone_number, msg)
-        print msg
-
 def compare_calls_email () :
 
     global msg
@@ -116,7 +97,7 @@ def compare_calls_email () :
         diff = int(current_call_number) - int(old_call_number)
         msg = "{} call(s) added, {} calls total.\n"\
               "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user=USR, pwd=PWD, recipient="chn566work@gmail.com",
+        send_email(user=USR, pwd=PWD, recipient=EMAIL,
                subject="One1 Call Notification System", body=msg)
         print msg
 
@@ -124,21 +105,14 @@ def compare_calls_email () :
         diff = int(old_call_number) - int(current_call_number)
         msg = "{} call(s) removed, {} calls total.\n" \
               "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user=USR, pwd=PWD, recipient="chn566work@gmail.com",
+        send_email(user=USR, pwd=PWD, recipient=EMAIL,
                    subject="One1 Call Notification System", body=msg)
         print msg
 
-def send_SMS(x,y):
-    client.send_message({
-        'from': 'One1',
-        'to': x,
-        'text': y,
-    })
 
 current_call_number = int(get_call_number())
 
-
-compare_calls()
+compare_calls_email()
 
 text.close()
 
