@@ -108,13 +108,13 @@ case $choise in
     1) InitializeSMS
     ;;
 
-    2) InitialzeEMAIL
+    2) InitializeEMAIL
        ;;
 
     *) echo "Invalid output, please try again"
         menu
         ;;
-
+esac
 }
 Verify_Pip
 menu
