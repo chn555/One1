@@ -27,6 +27,10 @@ PWD =  sys.argv[2]
 file = open("pnum.txt","r")
 text = open("callnum.txt","r")
 file2 = open("email.txt","r")
+user = open("gusr.txt","r")
+passwd = open("gpwd.txt","r")
+USR = user.read()
+PWD = user.read()
 EMAIL = file2.read()
 
 phone_number = int(file.read())

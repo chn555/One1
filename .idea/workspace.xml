@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce6c6b57-270a-4b39-89cf-6ef9bbe795ae" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/mainEmail.py" afterPath="$PROJECT_DIR$/mainEmail.py" />
-      <change beforePath="$PROJECT_DIR$/set_initials_email.py" afterPath="$PROJECT_DIR$/set_initials_email.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +16,11 @@
       <file leaf-file-name="mainEmail.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="491">
+              <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
-                <element signature="e#755#1372#0" expanded="false" />
-                <element signature="e#1401#2258#0" expanded="false" />
+                <element signature="e#849#1466#0" expanded="false" />
+                <element signature="e#1495#2352#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -31,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="123">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -288,8 +287,8 @@
         <state relative-caret-position="756">
           <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
           <folding>
-            <element signature="e#755#1372#0" expanded="false" />
-            <element signature="e#1401#2258#0" expanded="false" />
+            <element signature="e#849#1466#0" expanded="false" />
+            <element signature="e#1495#2352#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -339,8 +338,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#755#1372#0" expanded="false" />
-            <element signature="e#1401#2258#0" expanded="false" />
+            <element signature="e#849#1466#0" expanded="false" />
+            <element signature="e#1495#2352#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -355,7 +354,7 @@
     <entry file="file://$PROJECT_DIR$/install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -394,11 +393,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainEmail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="491">
+          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
-            <element signature="e#755#1372#0" expanded="false" />
-            <element signature="e#1401#2258#0" expanded="false" />
+            <element signature="e#849#1466#0" expanded="false" />
+            <element signature="e#1495#2352#0" expanded="false" />
           </folding>
         </state>
       </provider>

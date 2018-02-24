@@ -77,15 +77,17 @@ InitializeEMAIL(){
 
   cd ~/.One1/$name
     echo $email > email.txt
+    echo $gusr > gusr.txt
+    echo $gpwd > gpwd.txt
 	chmod +x phone_number.py
 	chmod +x set_initials_email.py
 
 	./phone_number.py
-  ./set_initials_email.py -$gusr -$gpwd && echo "phone number verified"
+  ./set_initials_email.py  && echo "phone number verified"
   touch run.sh
   echo "#!/bin/bash" > run.sh
   echo "cd $(pwd)" > run.sh
-  echo "/usr/bin/env python2.7 mainEmail.py -$gusr -$gpwd " >> run.sh
+  echo "/usr/bin/env python2.7 mainEmail.py " >> run.sh
   chmod +x run.sh
 
   echo  "* * * * * bash $(pwd)/run.sh" > mycron
