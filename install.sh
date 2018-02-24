@@ -23,9 +23,9 @@ Verify_Pip(){
 }
 
 Pip_req(){
-	pip install nexmo &> /dev/null
-	pip install requests &> /dev/null
-  pip install bs4 &> /dev/null
+	sudo pip install nexmo &> /dev/null
+	sudo pip install requests &> /dev/null
+  sudo pip install bs4 &> /dev/null
 }
 
 
