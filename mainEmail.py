@@ -20,8 +20,7 @@ import nexmo
 import sys
 
 
-USR =  sys.argv[1]
-PWD =  sys.argv[2]
+
 
 
 file = open("pnum.txt","r")

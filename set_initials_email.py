@@ -9,8 +9,14 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-USR =  sys.argv[1]
-PWD = sys.argv[2]
+
+
+
+user = open("gusr.txt","r")
+passwd = open("gpwd.txt","r")
+USR = user.read()
+PWD = user.read()
+EMAIL = file2.read()
 
 
 def send_email(user, pwd, recipient, subject, body):
