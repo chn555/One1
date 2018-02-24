@@ -71,7 +71,8 @@ InitializeEMAIL(){
   cp mainEmail.py ~/.One1/$name
 
   read -p "Please enter your email address : " email
-
+  read -p "Please enter your gmail username : " gusr
+  read -p "Please enter your gmail app password : " gpwd
 
 
   cd ~/.One1/$name
@@ -80,11 +81,11 @@ InitializeEMAIL(){
 	chmod +x set_initials_email.py
 
 	./phone_number.py
-  ./set_initials_email.py  && echo "phone number verified"
+  ./set_initials_email.py -$gusr -$gpwd && echo "phone number verified"
   touch run.sh
   echo "#!/bin/bash" > run.sh
   echo "cd $(pwd)" > run.sh
-  echo "/usr/bin/env python2.7 mainEmail.py " >> run.sh
+  echo "/usr/bin/env python2.7 mainEmail.py -$gusr -$gpwd " >> run.sh
   chmod +x run.sh
 
   echo  "* * * * * bash $(pwd)/run.sh" > mycron

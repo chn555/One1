@@ -9,8 +9,8 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-USR = "chn566"
-PWD = "itwmedbwphqaklsc"
+USR =  sys.argv[1]
+PWD = sys.argv[2]
 
 
 def send_email(user, pwd, recipient, subject, body):

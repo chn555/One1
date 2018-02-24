@@ -20,8 +20,8 @@ import nexmo
 import sys
 
 
-USR = "chn566"
-PWD = "itwmedbwphqaklsc"
+USR =  sys.argv[1]
+PWD =  sys.argv[2]
 
 
 file = open("pnum.txt","r")
