@@ -16,9 +16,10 @@ import sys
 
 user = open("gusr.txt","r")
 passwd = open("gpwd.txt","r")
-USR = user.read()
-PWD = passwd.read()
-
+USR = user.read().replace("\n","")
+PWD = passwd.read().replace("\n","")
+email = open("email.txt","r")
+EMAIL = email.read().replace("\n","")
 
 def send_email(user, pwd, recipient, subject, body):
     import smtplib

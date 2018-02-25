@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce6c6b57-270a-4b39-89cf-6ef9bbe795ae" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/set_initials_email.py" afterPath="$PROJECT_DIR$/set_initials_email.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="mainEmail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="167">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="61" selection-end-column="37" />
               <folding>
                 <element signature="e#812#1429#0" expanded="false" />
                 <element signature="e#1458#2315#0" expanded="false" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="-759">
+              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -39,36 +39,38 @@
       <file leaf-file-name="set_initials.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/set_initials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
               <folding>
-                <element signature="e#321#1072#0" expanded="false" />
+                <element signature="e#379#1130#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="set_initials_email.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="set_initials_email.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/set_initials_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="19" />
               <folding>
-                <element signature="e#363#982#0" expanded="false" />
-                <element signature="e#1011#1762#0" expanded="false" />
+                <element signature="e#23#52#0" expanded="true" />
+                <element signature="e#396#1013#0" expanded="false" />
+                <element signature="e#1042#1793#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="162">
+              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
-                <element signature="e#785#1402#0" expanded="false" />
-                <element signature="e#1431#2288#0" expanded="false" />
+                <element signature="e#780#1637#0" expanded="false" />
+                <element signature="e#1667#2379#0" expanded="false" />
+                <element signature="e#2404#2492#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,10 +91,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/set_initials.py" />
-        <option value="$PROJECT_DIR$/install.sh" />
         <option value="$PROJECT_DIR$/mainEmail.py" />
         <option value="$PROJECT_DIR$/set_initials_email.py" />
+        <option value="$PROJECT_DIR$/install.sh" />
+        <option value="$PROJECT_DIR$/set_initials.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -128,12 +131,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.One1/chn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -148,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mainEmail">
+  <component name="RunManager" selected="Python.set_initials_email">
     <configuration name="mainEmail" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,16 +206,36 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="set_initials_email" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="One1" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set_initials_email.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.phone_number" />
       <item index="1" class="java.lang.String" itemvalue="Python.set_initials" />
       <item index="2" class="java.lang.String" itemvalue="Python.mainEmail" />
+      <item index="3" class="java.lang.String" itemvalue="Python.set_initials_email" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.mainEmail" />
-        <item index="1" class="java.lang.String" itemvalue="Python.set_initials" />
-        <item index="2" class="java.lang.String" itemvalue="Python.phone_number" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.set_initials_email" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mainEmail" />
+        <item index="2" class="java.lang.String" itemvalue="Python.set_initials" />
+        <item index="3" class="java.lang.String" itemvalue="Python.phone_number" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +279,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -278,10 +301,65 @@
     <option name="LAST_COMMIT_MESSAGE" value="yes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mainEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#812#1429#0" expanded="false" />
+            <element signature="e#1458#2315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set_initials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#379#1130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#780#1637#0" expanded="false" />
+            <element signature="e#1667#2379#0" expanded="false" />
+            <element signature="e#2404#2492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set_initials_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+            <element signature="e#396#1013#0" expanded="false" />
+            <element signature="e#1042#1793#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mainEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -298,7 +376,7 @@
         <state relative-caret-position="198">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#321#1072#0" expanded="false" />
+            <element signature="e#379#1130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -308,8 +386,9 @@
         <state relative-caret-position="306">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <element signature="e#363#982#0" expanded="false" />
-            <element signature="e#1011#1762#0" expanded="false" />
+            <element signature="e#23#52#0" expanded="true" />
+            <element signature="e#396#1013#0" expanded="false" />
+            <element signature="e#1042#1793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -319,8 +398,9 @@
         <state relative-caret-position="378">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="17" />
           <folding>
-            <element signature="e#785#1402#0" expanded="false" />
-            <element signature="e#1431#2288#0" expanded="false" />
+            <element signature="e#780#1637#0" expanded="false" />
+            <element signature="e#1667#2379#0" expanded="false" />
+            <element signature="e#2404#2492#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,39 +431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/set_initials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#321#1072#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#785#1402#0" expanded="false" />
-            <element signature="e#1431#2288#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainEmail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="167">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="61" selection-end-column="37" />
           <folding>
             <element signature="e#812#1429#0" expanded="false" />
             <element signature="e#1458#2315#0" expanded="false" />
@@ -391,13 +442,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/set_initials_email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="318">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="e#363#982#0" expanded="false" />
-            <element signature="e#1011#1762#0" expanded="false" />
+            <element signature="e#23#52#0" expanded="true" />
+            <element signature="e#396#1013#0" expanded="false" />
+            <element signature="e#1042#1793#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set_initials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#379#1130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#780#1637#0" expanded="false" />
+            <element signature="e#1667#2379#0" expanded="false" />
+            <element signature="e#2404#2492#0" expanded="false" />
           </folding>
         </state>
       </provider>

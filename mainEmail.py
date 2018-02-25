@@ -25,12 +25,12 @@ import sys
 
 file = open("pnum.txt","r")
 text = open("callnum.txt","r")
-file2 = open("email.txt","r")
 user = open("gusr.txt","r")
 passwd = open("gpwd.txt","r")
-USR = user.read()
-PWD = user.read()
-EMAIL = file2.read()
+USR = user.read().replace("\n","")
+PWD = passwd.read().replace("\n","")
+email = open("email.txt","r")
+EMAIL = email.read().replace("\n","")
 
 phone_number = int(file.read())
 old_call_number = int(text.read())
