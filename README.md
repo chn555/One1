@@ -3,7 +3,7 @@
 this script is used to notify field techs of a change in call number.
 it checks the techs page every minute and reports change
 
-# Script is currently broken while I make fixes to code
+
 
 
 ### requirements
@@ -25,7 +25,7 @@ uninstallation is currently unsupported
 
 
 ## TODO
-add option for email notification
+add option for email notification DONE
 
 ## License
 
