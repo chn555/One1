@@ -38,20 +38,19 @@ InitializeSMS(){
 
   read -p "Please enter your nexmo key : " key
   read -p "Please enter your nexmo secret key : " secret
-  read -p "Please enter your gmail username : " gusr
-  read -p "Please enter your gmail app password : " gpwd
 
 
   cd ~/.One1/$name
 	chmod +x phone_number.py
 	chmod +x set_initials.py
-
+    printf $key > key.txt
+    printf $secret > secret.txt
 	./phone_number.py
-  ./set_initials.py -$key -$secret && echo "phone number verified"
+  ./set_initials.py  && echo "phone number verified"
   touch run.sh
   echo "#!/bin/bash" > run.sh
   echo "cd $(pwd)" > run.sh
-  echo "/usr/bin/env python2.7 main.py -$key -$secret -$gusr -$gpwd" >> run.sh
+  echo "/usr/bin/env python2.7 main.py -$key -$secret " >> run.sh
   chmod +x run.sh
 
   echo  "* * * * * bash $(pwd)/run.sh" > mycron
@@ -76,9 +75,9 @@ InitializeEMAIL(){
 
 
   cd ~/.One1/$name
-    echo $email > email.txt
-    echo $gusr > gusr.txt
-    echo $gpwd > gpwd.txt
+    printf $email > email.txt
+    printf $gusr > gusr.txt
+    printf $gpwd > gpwd.txt
 	chmod +x phone_number.py
 	chmod +x set_initials_email.py
 

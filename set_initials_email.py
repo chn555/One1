@@ -12,23 +12,22 @@ import sys
 
 
 
+#file2 = open("email.txt","r")
+
 user = open("gusr.txt","r")
 passwd = open("gpwd.txt","r")
 USR = user.read()
-PWD = user.read()
-
+PWD = passwd.read()
 
 
 def send_email(user, pwd, recipient, subject, body):
     import smtplib
-
     gmail_user = user
     gmail_pwd = pwd
     FROM = user
     TO = recipient if type(recipient) is list else [recipient]
     SUBJECT = subject
     TEXT = body
-
     # Prepare actual message
     message = """From: %s\nTo: %s\nSubject: %s\n\n%s
     """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
@@ -68,9 +67,7 @@ def get_call_number():
 
 file = open("pnum.txt","r")
 phone_number = file.read()
-
-file2 = open("email.txt","r")
-EMAIL = file2.read()
+EMAIL = "chn566@gmail.com"
 
 
 call = open("callnum.txt","w")

@@ -9,9 +9,10 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-KEY = sys.argv[1]
-SECRET = sys.argv[2]
-
+key = open("key.txt","r")
+secret = open("secret.txt","r")
+KEY = key.read()
+SECRET = secret.read()
 client = nexmo.Client(key=KEY, secret=SECRET)
 
 

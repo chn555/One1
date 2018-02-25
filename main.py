@@ -19,10 +19,11 @@ urllib3.disable_warnings()
 import nexmo
 import sys
 
-KEY = sys.argv[1]
-SECRET = sys.argv[2]
-USR = sys.argv[3]
-PWD = sys.argv[4]
+key = open("key.txt","r")
+secret = open("secret.txt","r")
+KEY = key.read()
+SECRET = secret.read()
+
 client = nexmo.Client(key=KEY, secret=SECRET)
 
 file = open("pnum.txt","r")
@@ -35,27 +36,6 @@ global_phone_number = "972"+str(phone_number)
 print global_phone_number
 
 
-def send_email(user, pwd, recipient, subject, body):
-    import smtplib
-    gmail_user = user
-    gmail_pwd = pwd
-    FROM = user
-    TO = recipient if type(recipient) is list else [recipient]
-    SUBJECT = subject
-    TEXT = body
-    # Prepare actual message
-    message = """From: %s\nTo: %s\nSubject: %s\n\n%s
-    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
-    try:
-        server = smtplib.SMTP("smtp.gmail.com", 587)
-        server.ehlo()
-        server.starttls()
-        server.login(gmail_user, gmail_pwd)
-        server.sendmail(FROM, TO, message)
-        server.close()
-        print ('successfully sent the mail')
-    except:
-        print ("failed to send mail")
 
 def get_call_number():
     global phone_number
@@ -104,28 +84,6 @@ def compare_calls () :
         msg = "{} call(s) removed, {} calls total.\n" \
               "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
         send_SMS(global_phone_number, msg)
-        print msg
-
-def compare_calls_email () :
-
-    global msg
-    msg = "test msg"
-    if current_call_number == old_call_number:
-       pass
-    elif current_call_number > old_call_number:
-        diff = int(current_call_number) - int(old_call_number)
-        msg = "{} call(s) added, {} calls total.\n"\
-              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user=USR, pwd=PWD, recipient="chn566work@gmail.com",
-               subject="One1 Call Notification System", body=msg)
-        print msg
-
-    elif old_call_number > current_call_number:
-        diff = int(old_call_number) - int(current_call_number)
-        msg = "{} call(s) removed, {} calls total.\n" \
-              "{:%H:%M}".format(diff, current_call_number, datetime.datetime.now())
-        send_email(user=USR, pwd=PWD, recipient="chn566work@gmail.com",
-                   subject="One1 Call Notification System", body=msg)
         print msg
 
 def send_SMS(x,y):
